@@ -206,6 +206,7 @@ export type RoutePath =
   | `/apple/apps/update/:country/:id/:platform?`
   | `/apple/design`
   | `/apple/exchange_repair/:country?`
+  | `/apple/newsroom`
   | `/apple/podcast/:id/:region?`
   | `/apple/security-releases/:language?`
   | `/appleinsider/:category?`
@@ -616,7 +617,7 @@ export type RoutePath =
   | `/codefather/questions/:sort?`
   | `/codeforces/contests`
   | `/codeforces/recent-actions/:minrating?`
-  | `/cognition/blog`
+  | `/cognition/blog/:category?`
   | `/cohere/blog`
   | `/coindesk/consensus-magazine`
   | `/coindesk/news`
@@ -691,8 +692,8 @@ export type RoutePath =
   | `/cupl/jwc`
   | `/curiouscat/user/:id`
   | `/curius/links/:name`
-  | `/cursor/blog/:topic?`
-  | `/cursor/changelog`
+  | `/cursor/blog/:topic?/:locale?`
+  | `/cursor/changelog/:locale?`
   | `/cw/author/:channel`
   | `/cw/master/:channel`
   | `/cw/sub/:channel`
@@ -756,6 +757,7 @@ export type RoutePath =
   | `/devolverdigital/blog`
   | `/devtrium/`
   | `/dewu/declaration/:categoryId?`
+  | `/dewu/techblog/:categoryId?`
   | `/dgjyw*`
   | `/dgtle/article/:id?/:pushed?`
   | `/dgtle/feed`
@@ -1505,6 +1507,7 @@ export type RoutePath =
   | `/imiker/ask/jinghua`
   | `/immich/cursed-knowledge`
   | `/imop/tianshu`
+  | `/inceptionlabs/blog`
   | `/indianexpress/section/:id{.+}?`
   | `/indiansinkuwait/latest`
   | `/indienova/:type`
@@ -2199,6 +2202,7 @@ export type RoutePath =
   | `/people/liuyan/:id/:state?`
   | `/people/xjpjh/:keyword?/:year?`
   | `/peopo/topic/:topicId?`
+  | `/perplexity/blog`
   | `/perplexity/changelog`
   | `/phoronix/:category?/:topic?`
   | `/pianyivps/`
@@ -3089,6 +3093,7 @@ export type RoutePath =
   | `/xueqiu/user/:id/:type?`
   | `/xueqiu/user_stock/:id`
   | `/xunhupay/blog`
+  | `/xupt/jyc/:type?`
   | `/xwenming/:category?`
   | `/xys/new`
   | `/xyu/index/tzgg`
@@ -3196,7 +3201,7 @@ export type RoutePath =
   | `/zhiy/letters/:author`
   | `/zhiy/posts/:author`
   | `/zhizhuan100/analytic`
-  | `/zhonglun/research/article/:language{[a-zA-Z0-9-]+}?`
+  | `/zhonglun/research/article/:language?`
   | `/zhubai/posts/:id`
   | `/zhubai/top20`
   | `/zhujiceping/`
